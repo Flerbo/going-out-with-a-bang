@@ -43,19 +43,54 @@
         }
         h1 {
             font-size: 22px;
-            font-weight: 600;
+            font-weight: bold;
             margin: 12px 0;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
         }
         p {
             opacity: 80%;
-            margin-bottom: 12px;
             line-height: 1.2;
+            margin-bottom: 12px;
         }
         strong {
             font-weight: bold;
         }
-        a {
+        article a {
             color: #E5AA61;
+        }
+
+        .works {
+            margin: 0 -12px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .works li {
+            width: calc(100% / 3);
+            padding: 12px;
+        }
+        .works a {
+            display: flex;
+            border: 1px solid #F0F0F0;
+            border-radius: 5px;
+            padding: 12px;
+            gap: 12px;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            transition: border 200ms ease-in-out;
+        }
+        .works a:hover {
+            border-color: #8CA3B1;
+        }
+        .works small {
+            font-size: 80%;
+            opacity: 80%;
+            display: block;
+            margin-top: 6px;
+            line-height: 1.2;
         }
     </style>
 </head>
@@ -101,5 +136,29 @@
             </p>
         </div>
     </article>
+    <div class="container">
+        <h2>بقیه کارهای ما</h2>
+        <ul class="works">
+            
+            <li>
+                <a href="https://nakamology.ir/?ref=flerbo" title="وبسایت ناکامولوژی">
+                    <img src="nakamology-logo.png" loading="lazy" alt="Nakamology Logo" width="60" height="60">
+                    <div>
+                        <strong>ناکامولوژی</strong>
+                        <small>مطالعه استارتاپ‌ها و پروژه‌های شکست خورده ایرانی به همراه قصه شکست آن‌ها از زبان بنیان‌گذاران</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://rangebrand.ir/?ref=flerbo" title="وبسایت رنگ برند">
+                    <img src="rangebrand-logo.png" loading="lazy" alt="Rangebrand Logo" width="60" height="60">
+                    <div>
+                        <strong>رنگ برند</strong>
+                        <small>لیستی از رنگ برند‌های مطرح در ایران به همراه ابزارهایی برای انتخاب رنگ مناسب برای برند خود</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
